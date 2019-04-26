@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+  <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css">
+
+  <title>Search repositories</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <form>
+      <div class="field is-horizontal">
+
+        <div class="filed">
+          <div class="control">
+            <input class="input is-primary is-mobile" type="text" placeholder="Seach repositories">
+          </div>
+        </div>
+
+        <div class="field appmargin">
+          <div class="control">
+            <div class="select is-primary is-fullwidth">
+              <select id="lang-tags">
+                <option selected value="pr-BR">Portuguese - Brazil</option>
+                <option value="en-US">English - United States</option>
+                <option value="en-AU">English - Australia </option>
+                <option value="ja"> Japanesee</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </form>
+
+    <ul id="list">
+      <!-- <li>
+        <div>
+          <b>Name: </b>
+          <p> Javascript 1 </p>
+        </div>
+        <div>
+          <b>Created At: </b> 
+          <p> 2019/04/26 </p>
+        </div>
+        <div>
+          <b>Forks: </b> 
+          <p> 320 </p>
+        </div>
+      </li> -->
+    </ul>
+
+  </div>
+
+  <script src="./app/main.js"></script>
+</body>
+
+</html>
