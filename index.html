@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
@@ -8,8 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-
   <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css">
+
+  <script>document.documentElement.classList += ' js'</script>
 
   <title>Search repositories</title>
 </head>
@@ -17,31 +18,34 @@
 <body>
 
   <div class="container">
-    <div class="field is-horizontal">
+    <div class="columns is-centered">
+      <div class="column is-half">
 
-      <div class="filed mediaAppMargin">
-        <div class="control">
-          <input class="input is-primary is-mobile" type="text" placeholder="Seach repositories" id="search">
-        </div>
-      </div>
+        <div class="field is-horizontal">
 
-      <div class="field appmargin">
-        <div class="control">
-          <div class="select is-primary is-fullwidth">
-            <select id="lang-tags">
-              <option selected value="pr-BR">Portuguese - Brazil</option>
-              <option value="en-US">English - United States</option>
-              <option value="en-AU">English - Australia </option>
-              <option value="ja"> Japanesee</option>
-            </select>
+          <div class="filed mediaAppMargin">
+            <div class="control">
+              <input class="input is-primary is-mobile" type="text" placeholder="Seach repositories" id="search">
+            </div>
           </div>
+
+          <div class="field appmargin">
+            <div class="control">
+              <div class="select is-primary is-fullwidth">
+                <select id="lang-tags">
+                  <option selected value="pr-BR">Portuguese - Brazil</option>
+                  <option value="en-US">English - United States</option>
+                  <option value="en-AU">English - Australia </option>
+                  <option value="ja"> Japanesee</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
 
-    </div>
-
-    <ul id="list">
-      <!-- <li>
+        <ul id="list">
+          <!-- <li>
         <div>
           <b>Name: </b>
           <p> Javascript 1 </p>
@@ -55,11 +59,14 @@
           <p> 320 </p>
         </div>
       </li> -->
-    </ul>
+        </ul>
+      </div>
+    </div>
 
   </div>
 
-  <script src="./app/main.js"></script>
+  <script src="./app/main.js" type="module"></script>
+
 </body>
 
 </html>
